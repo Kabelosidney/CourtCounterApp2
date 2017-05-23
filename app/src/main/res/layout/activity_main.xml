@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/clock"
+    tools:context="com.mlab.courtcounterapp.MainActivity">
+
+
+    
+    <TextView
+        android:id="@+id/counterTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:textSize="120sp"
+        android:textAlignment="center"
+        android:textColor="#726526"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/minusBtn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#fff"
+            android:background="#726526"
+            android:textSize="50sp"
+            android:layout_marginRight="2mm"/>
+
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:background="#726526"
+            android:textColor="#ffff"
+            android:textSize="70sp"/>
+
+        <Button
+            android:id="@+id/plusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:background="#726526"
+            android:layout_marginLeft="2mm"
+            android:textColor="#ffff"
+            android:textSize="50sp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
